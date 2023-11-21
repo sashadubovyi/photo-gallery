@@ -1,7 +1,7 @@
-import React from "react";
-import s from "./AboutMePage.module.scss";
-import meImg from "../../images/photographer-removebg.png";
-import { useSpring, animated, useInView } from "@react-spring/web";
+import React from 'react';
+import s from './AboutMePage.module.scss';
+import meImg from '../../images/photographer-removebg.png';
+import { useSpring, animated, useInView } from '@react-spring/web';
 
 export const AboutMePage = () => {
   const imgSprings = useSpring({
@@ -40,7 +40,7 @@ export const AboutMePage = () => {
       },
     }),
     {
-      rootMargin: "-20% 0%",
+      rootMargin: '-20% 0%',
     }
   );
 

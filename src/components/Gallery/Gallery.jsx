@@ -1,10 +1,10 @@
-import React from "react";
-import s from "./Gallery.module.scss";
-import family from "../../images/test/family.jpg";
-import solo from "../../images/test/solo.jpg";
-import wedding from "../../images/test/wedding.jpg";
-import { NavLink } from "react-router-dom";
-import { animated, useInView } from "@react-spring/web";
+import React from 'react';
+import s from './Gallery.module.scss';
+import family from '../../images/test/family.jpg';
+import solo from '../../images/test/solo.jpg';
+import wedding from '../../images/test/wedding.jpg';
+import { NavLink } from 'react-router-dom';
+import { animated, useInView } from '@react-spring/web';
 
 const Gallery = () => {
   const [ref, springs] = useInView(
@@ -19,7 +19,7 @@ const Gallery = () => {
       },
     }),
     {
-      rootMargin: "-10% 0%",
+      rootMargin: '-10% 0%',
     }
   );
 
@@ -35,7 +35,7 @@ const Gallery = () => {
       },
     }),
     {
-      rootMargin: "-10% 0%",
+      rootMargin: '-10% 0%',
     }
   );
 
@@ -51,7 +51,7 @@ const Gallery = () => {
       },
     }),
     {
-      rootMargin: "-10% 0%",
+      rootMargin: '-10% 0%',
     }
   );
 
@@ -67,7 +67,7 @@ const Gallery = () => {
       },
     }),
     {
-      rootMargin: "-10% 0%",
+      rootMargin: '-10% 0%',
     }
   );
 
@@ -83,7 +83,7 @@ const Gallery = () => {
       },
     }),
     {
-      rootMargin: "-10% 0%",
+      rootMargin: '-10% 0%',
     }
   );
 
@@ -191,7 +191,7 @@ const Gallery = () => {
         </animated.div>
 
         <animated.div className={s.box} ref={ref4} style={springs4}>
-          <NavLink to="/solo-photos" className={s.seeMoreBtn}>
+          <NavLink to="/kids-photos" className={s.seeMoreBtn}>
             <p>See more</p>
           </NavLink>
           <div className={s.imgBox}>

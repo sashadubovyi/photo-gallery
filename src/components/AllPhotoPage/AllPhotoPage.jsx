@@ -1,10 +1,11 @@
-import React, { Component } from "react";
-import s from "./AllPhotoPage.module.scss";
-import { NavLink } from "react-router-dom";
-import { IoArrowBackSharp } from "react-icons/io5";
-import { listAll, getDownloadURL, ref } from "firebase/storage";
-import { storage } from "../../firebaseConfig";
-import { TbZoomInAreaFilled } from "react-icons/tb";
+import React, { Component } from 'react';
+import s from './AllPhotoPage.module.scss';
+import { NavLink } from 'react-router-dom';
+import { IoArrowBackSharp } from 'react-icons/io5';
+import { listAll, getDownloadURL, ref } from 'firebase/storage';
+import { storage } from '../../firebaseConfig';
+import { TbZoomInAreaFilled } from 'react-icons/tb';
+import { IoIosCloseCircleOutline } from 'react-icons/io';
 
 export class AllPhotoPage extends Component {
   constructor(props) {
@@ -15,15 +16,15 @@ export class AllPhotoPage extends Component {
   }
 
   async componentDidMount() {
-    const folderNames = ["solo", "weddings", "family", "kids"];
+    const folderNames = ['solo', 'weddings', 'family', 'kids'];
 
     const photoURLs = await Promise.all(
-      folderNames.map(async (folder) => {
+      folderNames.map(async folder => {
         const folderRef = ref(storage, `images/${folder}`);
         const imagesList = await listAll(folderRef);
 
         return Promise.all(
-          imagesList.items.map(async (imageRef) => {
+          imagesList.items.map(async imageRef => {
             return getDownloadURL(imageRef);
           })
         );
@@ -35,8 +36,22 @@ export class AllPhotoPage extends Component {
     this.setState({ photoURLs: flattenedURLs });
   }
 
+  openModal = index => {
+    this.setState({
+      modalOpen: true,
+      selectedPhotoIndex: index,
+    });
+  };
+
+  closeModal = () => {
+    this.setState({
+      modalOpen: false,
+      selectedPhotoIndex: null,
+    });
+  };
+
   render() {
-    const { photoURLs } = this.state;
+    const { photoURLs, modalOpen, selectedPhotoIndex } = this.state;
 
     return (
       <>
@@ -50,14 +65,39 @@ export class AllPhotoPage extends Component {
 
         <div className={s.container}>
           {photoURLs.map((url, index) => (
-            <div className={s.imgBox} key={index}>
-              <img className={s.image} src={url} alt={`desc-${index}`} />
+            <div
+              className={s.imgBox}
+              key={index}
+              onClick={() => this.openModal(index)}
+            >
+              <img
+                loading="lazy"
+                className={s.image}
+                src={url}
+                alt={`desc-${index}`}
+              />
               <span className={s.zoomImg}>
                 <TbZoomInAreaFilled />
               </span>
             </div>
           ))}
         </div>
+
+        {modalOpen && (
+          <div className={s.modal}>
+            <div className={s.modalContent} onClick={this.closeModal}>
+              {selectedPhotoIndex !== null && (
+                <img
+                  className={s.modalImage}
+                  src={photoURLs[selectedPhotoIndex]}
+                  alt={`desc-${selectedPhotoIndex}`}
+                  onClick={e => e.stopPropagation()}
+                />
+              )}
+              <IoIosCloseCircleOutline className={s.closeBtn} />
+            </div>
+          </div>
+        )}
       </>
     );
   }

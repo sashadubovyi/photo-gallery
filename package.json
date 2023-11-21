@@ -5,6 +5,7 @@
   "homepage": "https://sashadubovyi.github.io/photo-gallery/",
   "dependencies": {
     "@react-spring/web": "^9.7.3",
+    "@splidejs/react-splide": "^0.7.12",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -15,7 +16,6 @@
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
     "sass": "^1.69.5",
-    "swiper": "^11.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
