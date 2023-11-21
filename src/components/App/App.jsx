@@ -1,14 +1,14 @@
-import React from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import Main from "../MainPage/Main";
-import AllPhotoPage from "../AllPhotoPage/AllPhotoPage";
-import SoloPage from "../AllPhotoPage/SoloPage";
-import WeddingsPage from "../AllPhotoPage/WeddingsPage";
-import FamilyPage from "../AllPhotoPage/FamilyPage";
-import Kids from "../AllPhotoPage/Kids";
-import Layout from "../Layout/Layout";
-import AdminPanel from "../AdminPanel/AdminPanel";
-
+import React from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Main from '../MainPage/Main';
+import AllPhotoPage from '../AllPhotoPage/AllPhotoPage';
+import SoloPage from '../AllPhotoPage/SoloPage';
+import WeddingsPage from '../AllPhotoPage/WeddingsPage';
+import FamilyPage from '../AllPhotoPage/FamilyPage';
+import Kids from '../AllPhotoPage/Kids';
+import Layout from '../Layout/Layout';
+import AdminPanel from '../AdminPanel/AdminPanel';
+//
 export const App = () => {
   return (
     <Routes>
