@@ -3,6 +3,7 @@ import s from './Gallery.module.scss';
 import family from '../../images/test/family.jpg';
 import solo from '../../images/test/solo.jpg';
 import wedding from '../../images/test/wedding.jpg';
+import kids from '../../images/test/kids.jpg';
 import { NavLink } from 'react-router-dom';
 import { animated, useInView } from '@react-spring/web';
 
@@ -95,7 +96,7 @@ const Gallery = () => {
             <p>See more</p>
           </NavLink>
           <div className={s.imgBox}>
-            <img className={s.img} src={family} alt="photo" />
+            <img className={s.img} src={family} alt="description" />
           </div>
           <div className={s.textBox}>
             <p className={s.title}>All photos</p>
@@ -120,7 +121,7 @@ const Gallery = () => {
             <p>See more</p>
           </NavLink>
           <div className={s.imgBox}>
-            <img className={s.img} src={wedding} alt="photo" />
+            <img className={s.img} src={wedding} alt="description" />
           </div>
           <div className={s.textBox}>
             <p className={s.title}>Weddings</p>
@@ -145,7 +146,7 @@ const Gallery = () => {
             <p>See more</p>
           </NavLink>
           <div className={s.imgBox}>
-            <img className={s.img} src={family} alt="photo" />
+            <img className={s.img} src={family} alt="description" />
           </div>
           <div className={s.textBox}>
             <p className={s.title}>Family</p>
@@ -170,7 +171,7 @@ const Gallery = () => {
             <p>See more</p>
           </NavLink>
           <div className={s.imgBox}>
-            <img className={s.img} src={solo} alt="photo" />
+            <img className={s.img} src={solo} alt="description" />
           </div>
           <div className={s.textBox}>
             <p className={s.title}>Solo</p>
@@ -195,7 +196,7 @@ const Gallery = () => {
             <p>See more</p>
           </NavLink>
           <div className={s.imgBox}>
-            <img className={s.img} src={solo} alt="photo" />
+            <img className={s.img} src={kids} alt="description" />
           </div>
           <div className={s.textBox}>
             <p className={s.title}>Kids</p>
