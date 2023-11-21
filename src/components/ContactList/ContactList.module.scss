@@ -1,0 +1,66 @@
+.menu {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+}
+
+.wrapper {
+  margin-top: 5px;
+  width: 40px;
+  min-height: 40px;
+  background-color: #fff;
+  box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;
+  position: relative;
+  z-index: 100;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: all 300ms;
+}
+
+.wrapper:hover {
+  opacity: 1;
+}
+
+.hidenBtns {
+  display: none;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBtn a,
+.mainBtn div {
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #5f5f5f89;
+  transition: all 300ms;
+  z-index: 250;
+}
+
+.mainBtn:hover a {
+  color: #5f5f5f;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    opacity: 1;
+  }
+}

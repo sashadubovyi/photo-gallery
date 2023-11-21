@@ -1,0 +1,110 @@
+.uploadContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.inputFile {
+  display: none;
+}
+
+.uploadContainer label {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 100px;
+  background: linear-gradient(45deg, blue, red);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.uploadPhotoBtn {
+  padding: 20px 25px;
+  background: rgb(12, 70, 179);
+  color: white;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.imageContainer {
+  position: relative;
+  background-color: white;
+}
+
+.deleteButton {
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 0;
+}
+
+.uploadPhotoBtn:hover {
+  background: linear-gradient(20deg, rgba(0, 0, 255, 1), rgba(255, 0, 0, 1));
+}
+
+.chooseFolder {
+  font-weight: 200;
+}
+
+.uploadContainer select {
+  border: none;
+  font-size: 18px;
+  margin-bottom: 30px;
+  width: 120px;
+  margin-top: 10px;
+}
+
+.bar {
+  height: 20px;
+  width: 500px;
+  background-color: #80808073;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  background: linear-gradient(
+    20deg,
+    rgba(0, 0, 255, 0.7),
+    rgba(255, 0, 0, 0.7)
+  );
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+}
+
+.uploadPercentage {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.imageSmall {
+  height: 200px;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 425px) {
+  .bar {
+    height: 20px;
+    width: 300px;
+  }
+}
