@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/photo-gallery/static/css/main.61e7ebbc.css",
-    "main.js": "/photo-gallery/static/js/main.cff01b32.js",
-    "static/css/172.a5072455.chunk.css": "/photo-gallery/static/css/172.a5072455.chunk.css",
-    "static/js/172.a357f94f.chunk.js": "/photo-gallery/static/js/172.a357f94f.chunk.js",
+    "main.css": "/photo-gallery/static/css/main.e279dba4.css",
+    "main.js": "/photo-gallery/static/js/main.403f2ace.js",
+    "static/css/799.c1fb6d61.chunk.css": "/photo-gallery/static/css/799.c1fb6d61.chunk.css",
+    "static/js/799.d36fb687.chunk.js": "/photo-gallery/static/js/799.d36fb687.chunk.js",
     "static/css/840.b128e540.chunk.css": "/photo-gallery/static/css/840.b128e540.chunk.css",
     "static/js/840.70ac3144.chunk.js": "/photo-gallery/static/js/840.70ac3144.chunk.js",
     "static/css/30.b128e540.chunk.css": "/photo-gallery/static/css/30.b128e540.chunk.css",
@@ -21,18 +21,20 @@
     "static/js/71.3b112b49.chunk.js": "/photo-gallery/static/js/71.3b112b49.chunk.js",
     "static/js/113.46a2dc59.chunk.js": "/photo-gallery/static/js/113.46a2dc59.chunk.js",
     "static/js/681.67e3b399.chunk.js": "/photo-gallery/static/js/681.67e3b399.chunk.js",
-    "static/js/914.d3d89bee.chunk.js": "/photo-gallery/static/js/914.d3d89bee.chunk.js",
+    "static/js/411.909d660e.chunk.js": "/photo-gallery/static/js/411.909d660e.chunk.js",
     "static/js/355.1fcf8846.chunk.js": "/photo-gallery/static/js/355.1fcf8846.chunk.js",
+    "static/media/card-family.jpg": "/photo-gallery/static/media/card-family.3de928fcc8ffd8cc1ba5.jpg",
     "static/media/photographer-removebg.png": "/photo-gallery/static/media/photographer-removebg.ae76fd3106fb1505b750.png",
-    "static/media/kids.jpg": "/photo-gallery/static/media/kids.3d701d6d2f9bcabdf835.jpg",
-    "static/media/wedding.jpg": "/photo-gallery/static/media/wedding.08c6344b3e63a166d79d.jpg",
-    "static/media/family.jpg": "/photo-gallery/static/media/family.42957be508ce08c59a96.jpg",
-    "static/media/solo.jpg": "/photo-gallery/static/media/solo.cee645bf408e36c8a2a5.jpg",
+    "static/media/card-wedding.jpg": "/photo-gallery/static/media/card-wedding.94af8a5994125f785aa8.jpg",
+    "static/media/card-bussines.jpg": "/photo-gallery/static/media/card-bussines.71f7ced3fdb8fb9826b4.jpg",
+    "static/media/card-solo.jpg": "/photo-gallery/static/media/card-solo.941c533074cdcdde9b66.jpg",
+    "static/media/card-kids.jpg": "/photo-gallery/static/media/card-kids.c0f9b14d5ffb9bb58d41.jpg",
+    "static/media/card-pregnant.jpg": "/photo-gallery/static/media/card-pregnant.87f7a6793e9857744adb.jpg",
     "index.html": "/photo-gallery/index.html",
-    "main.61e7ebbc.css.map": "/photo-gallery/static/css/main.61e7ebbc.css.map",
-    "main.cff01b32.js.map": "/photo-gallery/static/js/main.cff01b32.js.map",
-    "172.a5072455.chunk.css.map": "/photo-gallery/static/css/172.a5072455.chunk.css.map",
-    "172.a357f94f.chunk.js.map": "/photo-gallery/static/js/172.a357f94f.chunk.js.map",
+    "main.e279dba4.css.map": "/photo-gallery/static/css/main.e279dba4.css.map",
+    "main.403f2ace.js.map": "/photo-gallery/static/js/main.403f2ace.js.map",
+    "799.c1fb6d61.chunk.css.map": "/photo-gallery/static/css/799.c1fb6d61.chunk.css.map",
+    "799.d36fb687.chunk.js.map": "/photo-gallery/static/js/799.d36fb687.chunk.js.map",
     "840.b128e540.chunk.css.map": "/photo-gallery/static/css/840.b128e540.chunk.css.map",
     "840.70ac3144.chunk.js.map": "/photo-gallery/static/js/840.70ac3144.chunk.js.map",
     "30.b128e540.chunk.css.map": "/photo-gallery/static/css/30.b128e540.chunk.css.map",
@@ -50,11 +52,11 @@
     "71.3b112b49.chunk.js.map": "/photo-gallery/static/js/71.3b112b49.chunk.js.map",
     "113.46a2dc59.chunk.js.map": "/photo-gallery/static/js/113.46a2dc59.chunk.js.map",
     "681.67e3b399.chunk.js.map": "/photo-gallery/static/js/681.67e3b399.chunk.js.map",
-    "914.d3d89bee.chunk.js.map": "/photo-gallery/static/js/914.d3d89bee.chunk.js.map",
+    "411.909d660e.chunk.js.map": "/photo-gallery/static/js/411.909d660e.chunk.js.map",
     "355.1fcf8846.chunk.js.map": "/photo-gallery/static/js/355.1fcf8846.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61e7ebbc.css",
-    "static/js/main.cff01b32.js"
+    "static/css/main.e279dba4.css",
+    "static/js/main.403f2ace.js"
   ]
 }
