@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/photo-gallery/static/css/main.e279dba4.css",
-    "main.js": "/photo-gallery/static/js/main.9409c0ed.js",
+    "main.js": "/photo-gallery/static/js/main.77ff19e0.js",
     "static/css/799.736dd711.chunk.css": "/photo-gallery/static/css/799.736dd711.chunk.css",
     "static/js/799.d36fb687.chunk.js": "/photo-gallery/static/js/799.d36fb687.chunk.js",
     "static/css/840.b128e540.chunk.css": "/photo-gallery/static/css/840.b128e540.chunk.css",
@@ -32,7 +32,7 @@
     "static/media/card-pregnant.jpg": "/photo-gallery/static/media/card-pregnant.87f7a6793e9857744adb.jpg",
     "index.html": "/photo-gallery/index.html",
     "main.e279dba4.css.map": "/photo-gallery/static/css/main.e279dba4.css.map",
-    "main.9409c0ed.js.map": "/photo-gallery/static/js/main.9409c0ed.js.map",
+    "main.77ff19e0.js.map": "/photo-gallery/static/js/main.77ff19e0.js.map",
     "799.736dd711.chunk.css.map": "/photo-gallery/static/css/799.736dd711.chunk.css.map",
     "799.d36fb687.chunk.js.map": "/photo-gallery/static/js/799.d36fb687.chunk.js.map",
     "840.b128e540.chunk.css.map": "/photo-gallery/static/css/840.b128e540.chunk.css.map",
@@ -57,6 +57,6 @@
   },
   "entrypoints": [
     "static/css/main.e279dba4.css",
-    "static/js/main.9409c0ed.js"
+    "static/js/main.77ff19e0.js"
   ]
 }
