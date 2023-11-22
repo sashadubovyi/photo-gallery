@@ -235,6 +235,7 @@
 
   .touchIcon {
     position: absolute;
+    display: flex;
     top: 10px;
     left: 10px;
     font-size: 40px;
@@ -268,5 +269,9 @@
     left: 55%;
     bottom: 30%;
     transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .touchIcon {
+    display: flex;
   }
 }
