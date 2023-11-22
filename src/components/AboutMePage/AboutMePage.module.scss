@@ -2,16 +2,19 @@
   height: 100vh;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 100px;
   overflow: hidden;
 }
 
 .mainTitle {
   text-align: center;
-  font-size: 70px;
+  font-size: 150px;
   font-weight: 200;
+  color: rgba(44, 14, 44, 0.744);
 }
 
 .container {

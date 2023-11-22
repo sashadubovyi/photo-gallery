@@ -12,7 +12,7 @@ import { MdTouchApp } from 'react-icons/md';
 const PriceGrid = () => {
   return (
     <div className={s.section}>
-      <h1 className={s.mainTitle}>MY PRICE</h1>
+      <h1 className={s.mainTitle}>GALLERY</h1>
       <div className={s.container}>
         <div className={s.imgCard}>
           <MdTouchApp className={s.touchIcon} />
