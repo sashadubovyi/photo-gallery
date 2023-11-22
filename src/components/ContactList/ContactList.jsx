@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import s from "./ContactList.module.scss";
+import React, { Component } from 'react';
+import s from './ContactList.module.scss';
 import {
   FaTelegramPlane,
   FaInstagram,
   FaFacebookSquare,
   FaPhoneSquareAlt,
-} from "react-icons/fa";
-import { IoChatbubbleEllipsesSharp } from "react-icons/io5";
+} from 'react-icons/fa';
+import { IoChatbubbleEllipsesSharp } from 'react-icons/io5';
 
 export class ContactList extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ export class ContactList extends Component {
   }
 
   toggleContactsVisibility = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       contactsVisible: !prevState.contactsVisible,
     }));
   };
@@ -35,7 +35,7 @@ export class ContactList extends Component {
 
         <div
           className={`${s.hidenBtns} ${
-            this.state.contactsVisible ? s.visible : ""
+            this.state.contactsVisible ? s.visible : ''
           }`}
         >
           <div className={s.wrapper}>
@@ -48,7 +48,11 @@ export class ContactList extends Component {
 
           <div className={s.wrapper}>
             <div className={s.mainBtn}>
-              <a href="instagram.com" className={s.insta}>
+              <a
+                href="https://www.instagram.com/yanadubovaya.ph/"
+                target="_blanc"
+                className={s.insta}
+              >
                 <FaInstagram />
               </a>
             </div>
@@ -56,7 +60,11 @@ export class ContactList extends Component {
 
           <div className={s.wrapper}>
             <div className={s.mainBtn}>
-              <a href="facebook.com" className={s.facebook}>
+              <a
+                href="https://www.facebook.com/richy.yana"
+                target="_blanc"
+                className={s.facebook}
+              >
                 <FaFacebookSquare />
               </a>
             </div>
@@ -64,7 +72,11 @@ export class ContactList extends Component {
 
           <div className={s.wrapper}>
             <div className={s.mainBtn}>
-              <a href="telegram.com" className={s.telegram}>
+              <a
+                href="https://t.me/Yanadubovaya"
+                target="_blanc"
+                className={s.telegram}
+              >
                 <FaTelegramPlane />
               </a>
             </div>
