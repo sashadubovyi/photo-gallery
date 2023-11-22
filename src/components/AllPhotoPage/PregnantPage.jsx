@@ -7,7 +7,7 @@ import { storage } from '../../firebaseConfig';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 import RenderPhoto from 'components/RenderPhoto/RenderPhoto';
 
-export class Kids extends Component {
+export class Pregnant extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +18,7 @@ export class Kids extends Component {
   }
 
   async componentDidMount() {
-    const folderName = 'wedings';
+    const folderName = 'pregnant';
 
     const folderRef = ref(storage, `images/${folderName}`);
     const imagesList = await listAll(folderRef);
@@ -81,4 +81,4 @@ export class Kids extends Component {
   }
 }
 
-export default Kids;
+export default Pregnant;

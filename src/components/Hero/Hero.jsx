@@ -10,7 +10,7 @@ const Hero = () => {
         <img src={meImg} alt="me" className={s.meImg} />
         <div className={s.textContainer}>
           <p className={s.textMe}>MY NAME</p>
-          <p className={s.textMe}>YANA DUBOVAYA</p>
+          <p className={s.textMe}>YANA DUBOVÁ</p>
           <p className={s.textMe}>I'M PHOTOGRAPHER</p>
           <p className={s.textMe}>FROM KYIV</p>
           <a

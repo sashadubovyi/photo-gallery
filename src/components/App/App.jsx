@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Loader from '../Loader/Loader';
+import Pregnant from 'components/AllPhotoPage/PregnantPage';
+import Bussines from 'components/AllPhotoPage/BussinesPage';
 
 const Main = lazy(() => import('../MainPage/Main'));
 const AllPhotoPage = lazy(() => import('../AllPhotoPage/AllPhotoPage'));
@@ -22,6 +24,8 @@ export const App = () => {
           <Route path="/wedding-photos" element={<WeddingsPage />} />
           <Route path="/family-photos" element={<FamilyPage />} />
           <Route path="/kids-photos" element={<Kids />} />
+          <Route path="/pregnant-photos" element={<Pregnant />} />
+          <Route path="/bussines-photos" element={<Bussines />} />
           <Route path="/admin" element={<AdminPanel />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>

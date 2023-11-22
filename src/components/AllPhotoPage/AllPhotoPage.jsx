@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { IoArrowBackSharp } from 'react-icons/io5';
 import { listAll, getDownloadURL, ref } from 'firebase/storage';
 import { storage } from '../../firebaseConfig';
-import { TbZoomInAreaFilled } from 'react-icons/tb';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
+import RenderPhoto from 'components/RenderPhoto/RenderPhoto';
 
 export class AllPhotoPage extends Component {
   constructor(props) {
@@ -16,7 +16,14 @@ export class AllPhotoPage extends Component {
   }
 
   async componentDidMount() {
-    const folderNames = ['solo', 'weddings', 'family', 'kids'];
+    const folderNames = [
+      'solo',
+      'weddings',
+      'family',
+      'kids',
+      'bussines',
+      'pregnant',
+    ];
 
     const photoURLs = await Promise.all(
       folderNames.map(async folder => {
@@ -63,25 +70,7 @@ export class AllPhotoPage extends Component {
           </div>
         </div>
 
-        <div className={s.container}>
-          {photoURLs.map((url, index) => (
-            <div
-              className={s.imgBox}
-              key={index}
-              onClick={() => this.openModal(index)}
-            >
-              <img
-                loading="lazy"
-                className={s.image}
-                src={url}
-                alt={`desc-${index}`}
-              />
-              <span className={s.zoomImg}>
-                <TbZoomInAreaFilled />
-              </span>
-            </div>
-          ))}
-        </div>
+        <RenderPhoto photoURLs={photoURLs} openModal={this.openModal} />
 
         {modalOpen && (
           <div className={s.modal}>
