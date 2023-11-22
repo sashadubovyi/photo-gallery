@@ -1,5 +1,4 @@
 .section {
-  height: 100vh;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 100px;
@@ -93,10 +92,23 @@
     height: 100vh;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     overflow: hidden;
+  }
+
+  .textBox {
+    max-width: 100%;
+  }
+
+  .contact {
+    border: 1px solid white;
+  }
+
+  .contactIcon {
+    font-size: 30px;
   }
 
   .container {
@@ -119,6 +131,6 @@
     width: 100%;
     min-height: 200px;
     height: 100%;
-    background-color: grey;
+    background-color: white;
   }
 }
