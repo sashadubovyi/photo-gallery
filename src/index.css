@@ -36,6 +36,7 @@ a {
   text-decoration: none;
   display: block;
   color: inherit;
+  cursor: pointer;
 }
 
 h1,

@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  align-items: self-start;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.meImg {
+  object-fit: cover;
+  object-position: top center;
+  min-width: 20vw;
+  height: 100%;
+  z-index: 2;
+}
+
+.textContainer {
+  position: absolute;
+  padding-top: 7%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  align-items: flex-end;
+  bottom: 20%;
+  z-index: 20;
+}
+
+.textMe {
+  font-size: 150px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: -1px -1px 0 #00000050, 1px -1px 0 #00000050, -1px 1px 0 #00000050,
+    1px 1px 0 #00000050;
+  margin-right: 50px;
+}
+
+.aboutMeContainer {
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 30px;
+  font-weight: 200;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .textMe {
+    font-size: 100px;
+  }
+
+  .aboutMeContainer {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .textMe {
+    font-size: 80px;
+  }
+  .aboutMeContainer {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .textContainer {
+    bottom: 10%;
+  }
+  .textMe {
+    font-size: 40px;
+    margin-right: 1%;
+  }
+  .aboutMeContainer {
+    font-size: 20px;
+  }
+}
