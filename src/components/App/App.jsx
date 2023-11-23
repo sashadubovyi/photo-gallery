@@ -14,6 +14,8 @@ const Layout = lazy(() => import('../Layout/Layout'));
 const AdminPanel = lazy(() => import('../AdminPanel/AdminPanel'));
 const EntenAdminPage = lazy(() => import('../AdminPanel/EntenAdminPage'));
 
+//
+
 export const App = () => {
   return (
     <Suspense fallback={<Loader />}>
