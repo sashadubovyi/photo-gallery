@@ -6,7 +6,9 @@ import {
   FaFacebookSquare,
   FaPhoneSquareAlt,
 } from 'react-icons/fa';
-import { IoChatbubbleEllipsesSharp } from 'react-icons/io5';
+import { IoChatbubbleEllipsesSharp, IoClose } from 'react-icons/io5';
+import { NavLink } from 'react-router-dom';
+import { PiLockOpenFill } from 'react-icons/pi';
 
 export class ContactList extends Component {
   constructor(props) {
@@ -28,7 +30,11 @@ export class ContactList extends Component {
         <div className={s.wrapper}>
           <div className={s.mainBtn}>
             <div onClick={this.toggleContactsVisibility}>
-              <IoChatbubbleEllipsesSharp />
+              {this.state.contactsVisible ? (
+                <IoClose />
+              ) : (
+                <IoChatbubbleEllipsesSharp />
+              )}
             </div>
           </div>
         </div>
@@ -79,6 +85,14 @@ export class ContactList extends Component {
               >
                 <FaTelegramPlane />
               </a>
+            </div>
+          </div>
+
+          <div className={s.wrapper}>
+            <div className={s.mainBtn}>
+              <NavLink to="/login">
+                <PiLockOpenFill />
+              </NavLink>
             </div>
           </div>
         </div>

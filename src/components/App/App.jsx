@@ -12,6 +12,7 @@ const FamilyPage = lazy(() => import('../AllPhotoPage/FamilyPage'));
 const Kids = lazy(() => import('../AllPhotoPage/Kids'));
 const Layout = lazy(() => import('../Layout/Layout'));
 const AdminPanel = lazy(() => import('../AdminPanel/AdminPanel'));
+const EntenAdminPage = lazy(() => import('../AdminPanel/EntenAdminPage'));
 
 export const App = () => {
   return (
@@ -26,6 +27,7 @@ export const App = () => {
           <Route path="/kids-photos" element={<Kids />} />
           <Route path="/pregnant-photos" element={<Pregnant />} />
           <Route path="/bussines-photos" element={<Bussines />} />
+          <Route path="/login" element={<EntenAdminPage />} />
           <Route path="/admin" element={<AdminPanel />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>

@@ -1,17 +1,12 @@
-.menu {
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  z-index: 100;
-}
-
 .wrapper {
   margin-top: 5px;
   width: 40px;
   min-height: 40px;
   border: 2px solid rgba(44, 14, 44, 0.744);
   background-color: rgba(255, 255, 255, 0.25);
-  position: relative;
+  position: fixed;
+  top: 20px;
+  left: 20px;
   z-index: 100;
   border-radius: 50px;
   overflow: hidden;
@@ -21,32 +16,12 @@
   transition: all 0.1s;
 }
 
-.wrapper:hover,
-.wrapper:hover .mainBtn a,
-.wrapper:hover .mainBtn div {
+.wrapper:hover {
   opacity: 1;
   border-color: rgb(235, 142, 244);
-  color: rgb(235, 142, 244);
 }
 
-.wrapper:last-child:hover,
-.wrapper:last-child:hover a {
-  opacity: 0.8;
-  border-color: red;
-  color: red;
-}
-
-.hidenBtns {
-  display: none;
-}
-
-.visible {
-  display: flex;
-  flex-direction: column;
-}
-
-.mainBtn a,
-.mainBtn div {
+.mainBtn {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -64,8 +39,16 @@
   z-index: 250;
 }
 
-@media only screen and (max-width: 768px) {
-  .wrapper {
-    opacity: 1;
-  }
+.mainBtn:hover {
+  color: rgb(235, 142, 244);
+}
+
+.backBtn {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,26 +1,35 @@
-import React, { Component } from "react";
-import s from "./AdminPanel.module.scss";
+import React, { Component } from 'react';
+import s from './AdminPanel.module.scss';
 import {
   getStorage,
   ref,
   uploadBytesResumable,
   getDownloadURL,
-} from "firebase/storage";
-import { initializeApp } from "firebase/app";
+} from 'firebase/storage';
+import { initializeApp } from 'firebase/app';
+import { auth } from '../../firebaseConfig';
+import { PiPersonSimpleRunFill } from 'react-icons/pi';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBV36jpX-P4riejmVYQlexhyen4DEijUyU",
-  authDomain: "photo-gallery-478c0.firebaseapp.com",
-  projectId: "photo-gallery-478c0",
-  storageBucket: "photo-gallery-478c0.appspot.com",
-  messagingSenderId: "948924880062",
-  appId: "1:948924880062:web:1458bd90eacf61bedefaef",
+  apiKey: 'AIzaSyBV36jpX-P4riejmVYQlexhyen4DEijUyU',
+  authDomain: 'photo-gallery-478c0.firebaseapp.com',
+  projectId: 'photo-gallery-478c0',
+  storageBucket: 'photo-gallery-478c0.appspot.com',
+  messagingSenderId: '948924880062',
+  appId: '1:948924880062:web:1458bd90eacf61bedefaef',
 };
 
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 
-const folderOptions = ["solo", "wedings", "family", "kids"];
+const folderOptions = [
+  'solo',
+  'wedings',
+  'family',
+  'kids',
+  'bussines',
+  'pregnant',
+];
 
 export class AdminPanel extends Component {
   constructor(props) {
@@ -40,8 +49,8 @@ export class AdminPanel extends Component {
     if (selectedFiles.length > 0) {
       const reader = new FileReader();
 
-      reader.onload = (e) => {
-        const uploadedImageUrls = Array.from(selectedFiles).map((file) =>
+      reader.onload = e => {
+        const uploadedImageUrls = Array.from(selectedFiles).map(file =>
           URL.createObjectURL(file)
         );
 
@@ -60,34 +69,34 @@ export class AdminPanel extends Component {
     const { selectedFiles, selectedFolder } = this.state;
 
     if (selectedFiles.length === 0) {
-      console.error("Файли не вибрані!");
+      console.error('Файли не вибрані!');
       return;
     }
 
-    const uploadPromises = Array.from(selectedFiles).map((file) => {
+    const uploadPromises = Array.from(selectedFiles).map(file => {
       const storageRef = ref(storage, `images/${selectedFolder}/${file.name}`);
       const uploadTask = uploadBytesResumable(storageRef, file);
 
       return new Promise((resolve, reject) => {
         uploadTask.on(
-          "state_changed",
-          (snapshot) => {
+          'state_changed',
+          snapshot => {
             const progress = Math.round(
               (snapshot.bytesTransferred / snapshot.totalBytes) * 100
             );
             this.setState({ uploadProgress: progress });
           },
-          (error) => {
-            console.error("Помилка завантаження файлу:", error);
+          error => {
+            console.error('Помилка завантаження файлу:', error);
             reject(error);
           },
           () => {
             getDownloadURL(uploadTask.snapshot.ref)
-              .then((downloadURL) => {
-                console.log("Файл доступний за адресою", downloadURL);
+              .then(downloadURL => {
+                console.log('Файл доступний за адресою', downloadURL);
                 resolve(downloadURL);
               })
-              .catch((error) => reject(error));
+              .catch(error => reject(error));
           }
         );
       });
@@ -98,25 +107,37 @@ export class AdminPanel extends Component {
       this.setState({
         uploadedImageUrls,
         uploadProgress: 0,
-        selectedFiles: [], // Забираємо вибрані файли після завантаження
+        selectedFiles: [],
       });
     } catch (error) {
-      console.error("Помилка завантаження файлів:", error);
+      console.error('Помилка завантаження файлів:', error);
     }
   }
+
+  handleLogout = async () => {
+    try {
+      await auth.signOut();
+    } catch (error) {
+      console.error('Помилка виходу:', error);
+    }
+  };
 
   render() {
     const { uploadProgress, uploadedImageUrls, selectedFolder } = this.state;
 
     return (
       <>
+        <button className={s.logoutButton} onClick={this.handleLogout}>
+          <PiPersonSimpleRunFill />
+        </button>
+
         <div className={s.uploadContainer}>
           <div className={s.folderSelect}></div>
           <input
             type="file"
             className={s.inputFile}
             id="fileInp"
-            onChange={(event) => this.getFiles(event)}
+            onChange={event => this.getFiles(event)}
             accept="image/png, image/jpeg, image/jpg"
             ref={this.fileInputRef}
             multiple
@@ -151,9 +172,9 @@ export class AdminPanel extends Component {
 
           <select
             value={selectedFolder}
-            onChange={(e) => this.handleFolderChange(e)}
+            onChange={e => this.handleFolderChange(e)}
           >
-            {folderOptions.map((folder) => (
+            {folderOptions.map(folder => (
               <option key={folder} value={folder}>
                 {folder}
               </option>

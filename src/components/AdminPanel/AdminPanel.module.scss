@@ -8,6 +8,10 @@
   position: relative;
 }
 
+p {
+  cursor: pointer;
+}
+
 .inputFile {
   display: none;
 }
@@ -107,4 +111,79 @@
     height: 20px;
     width: 300px;
   }
+}
+
+// ENTER ADMIN PAGE
+
+.eContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 50px;
+  border: 2px solid rgba(44, 14, 44, 0.744);
+  border-radius: 10px;
+  background-color: rgba(151, 109, 151, 0.29);
+}
+
+.eForm input {
+  outline: none;
+  color: rgba(44, 14, 44, 0.744);
+  padding: 5px 10px;
+  border: 2px solid rgba(44, 14, 44, 0.744);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.eForm button {
+  width: 50%;
+  padding: 5px 10px;
+  border: 2px solid rgba(44, 14, 44, 0.744);
+  border-radius: 5px;
+  background-color: rgba(44, 14, 44, 0.556);
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.eForm button:hover {
+  background-color: rgb(235, 142, 244);
+}
+
+.eForm h1 {
+  font-weight: 200;
+}
+
+.logoutButton {
+  position: fixed;
+  top: 25px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  border-radius: 50px;
+  opacity: 0.8;
+  border: 2px solid rgba(44, 14, 44, 0.744);
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: all 0.1s;
+  font-size: 20px;
+  color: rgba(44, 14, 44, 0.744);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  opacity: 1;
+  border-color: rgb(235, 142, 244);
+  color: rgb(235, 142, 244);
 }

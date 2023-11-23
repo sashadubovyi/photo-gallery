@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import s from './AllPhotoPage.module.scss';
-import { NavLink } from 'react-router-dom';
-import { IoArrowBackSharp } from 'react-icons/io5';
 import { listAll, getDownloadURL, ref } from 'firebase/storage';
 import { storage } from '../../firebaseConfig';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 import RenderPhoto from 'components/RenderPhoto/RenderPhoto';
+import BackBtn from 'components/BackBtn/BackBtn';
 
 export class AllPhotoPage extends Component {
   constructor(props) {
@@ -62,13 +61,7 @@ export class AllPhotoPage extends Component {
 
     return (
       <>
-        <div className={s.wrapper}>
-          <div className={s.mainBtn}>
-            <NavLink className={s.backBtn} to="/">
-              <IoArrowBackSharp />
-            </NavLink>
-          </div>
-        </div>
+        <BackBtn />
 
         <RenderPhoto photoURLs={photoURLs} openModal={this.openModal} />
 
