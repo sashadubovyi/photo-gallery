@@ -2,7 +2,7 @@
   "name": "photo-gallery",
   "version": "0.1.0",
   "private": true,
-  "homepage": "dubova-yana.vercel.app/photo-gallery/",
+  "homepage": "https://sashadubovyi.github.io/photo-gallery/",
   "dependencies": {
     "@react-spring/web": "^9.7.3",
     "@splidejs/react-splide": "^0.7.12",
