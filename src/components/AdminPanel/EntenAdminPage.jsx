@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import {
-  onAuthStateChanged,
-  getAuth,
-  signInWithEmailAndPassword,
-} from 'firebase/auth';
+// import { useNavigate } from 'react-router-dom';
+import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import AdminPanel from './AdminPanel';
 import BackBtn from 'components/BackBtn/BackBtn';
 import s from './AdminPanel.module.scss';
@@ -14,7 +10,7 @@ const EnterAdminPage = () => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
   const [user, setUser] = useState(null);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, user => {
