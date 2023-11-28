@@ -1,5 +1,6 @@
-import ContactList from "../ContactList/ContactList";
-import { Outlet } from "react-router-dom";
+import Footer from 'components/Footer/Footer';
+import ContactList from '../ContactList/ContactList';
+import { Outlet } from 'react-router-dom';
 
 export default function Layout() {
   return (
@@ -8,6 +9,7 @@ export default function Layout() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }
