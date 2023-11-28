@@ -3,6 +3,7 @@ import s from './Main.module.scss';
 import AboutMePage from '../AboutMePage/AboutMePage';
 import PriceGrid from 'components/PriceGrid/PriceGrid';
 import Hero from 'components/Hero/Hero';
+import InstagramPage from 'components/InstagramPage/InstagramPage';
 
 export class Main extends Component {
   render() {
@@ -12,6 +13,7 @@ export class Main extends Component {
           <Hero />
           <PriceGrid />
           <AboutMePage />
+          <InstagramPage />
         </div>
       </>
     );

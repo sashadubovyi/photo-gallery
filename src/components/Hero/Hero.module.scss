@@ -1,3 +1,5 @@
+//
+
 .container {
   display: flex;
   align-items: self-start;
@@ -34,6 +36,11 @@
   color: rgba(44, 14, 44, 0.744);
   margin-right: 50px;
   transition: all 0.1s;
+}
+
+.textMe:nth-child(2) {
+  font-family: 'Reenie Beanie', cursive;
+  transform: scale(1.5) translateX(-70px);
 }
 
 .textMe:nth-child(2) {
@@ -111,6 +118,14 @@
     padding-right: 0;
   }
 
+  .textMe:nth-child(2) {
+    // font-family: 'Reenie Beanie', cursive;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    transform: scale(1) translateX(-0px);
+  }
+
   .textMe:last-child {
     font-size: 70px;
     font-weight: 300;
@@ -154,8 +169,8 @@
     display: flex;
     padding-right: 0;
     position: absolute;
-    right: 50px;
-    bottom: 90px;
+    right: 15px;
+    bottom: 5px;
     color: white;
   }
   .aboutMeContainer {
