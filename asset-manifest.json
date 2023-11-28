@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/photo-gallery/static/css/main.27b25043.css",
-    "main.js": "/photo-gallery/static/js/main.82948825.js",
-    "static/css/799.2eec65a6.chunk.css": "/photo-gallery/static/css/799.2eec65a6.chunk.css",
-    "static/js/799.26c0dfe1.chunk.js": "/photo-gallery/static/js/799.26c0dfe1.chunk.js",
+    "main.css": "/photo-gallery/static/css/main.8a8957bb.css",
+    "main.js": "/photo-gallery/static/js/main.6147e61e.js",
+    "static/css/519.8ed05ac5.chunk.css": "/photo-gallery/static/css/519.8ed05ac5.chunk.css",
+    "static/js/519.69c608f9.chunk.js": "/photo-gallery/static/js/519.69c608f9.chunk.js",
     "static/js/840.4a8de919.chunk.js": "/photo-gallery/static/js/840.4a8de919.chunk.js",
     "static/js/30.59696e83.chunk.js": "/photo-gallery/static/js/30.59696e83.chunk.js",
     "static/js/979.289e5de5.chunk.js": "/photo-gallery/static/js/979.289e5de5.chunk.js",
@@ -26,10 +26,10 @@
     "static/media/card-kids.jpg": "/photo-gallery/static/media/card-kids.73284e1d88f73f742d3a.jpg",
     "static/media/card-pregnant.jpg": "/photo-gallery/static/media/card-pregnant.6e43479bad92797e1a81.jpg",
     "index.html": "/photo-gallery/index.html",
-    "main.27b25043.css.map": "/photo-gallery/static/css/main.27b25043.css.map",
-    "main.82948825.js.map": "/photo-gallery/static/js/main.82948825.js.map",
-    "799.2eec65a6.chunk.css.map": "/photo-gallery/static/css/799.2eec65a6.chunk.css.map",
-    "799.26c0dfe1.chunk.js.map": "/photo-gallery/static/js/799.26c0dfe1.chunk.js.map",
+    "main.8a8957bb.css.map": "/photo-gallery/static/css/main.8a8957bb.css.map",
+    "main.6147e61e.js.map": "/photo-gallery/static/js/main.6147e61e.js.map",
+    "519.8ed05ac5.chunk.css.map": "/photo-gallery/static/css/519.8ed05ac5.chunk.css.map",
+    "519.69c608f9.chunk.js.map": "/photo-gallery/static/js/519.69c608f9.chunk.js.map",
     "840.4a8de919.chunk.js.map": "/photo-gallery/static/js/840.4a8de919.chunk.js.map",
     "30.59696e83.chunk.js.map": "/photo-gallery/static/js/30.59696e83.chunk.js.map",
     "979.289e5de5.chunk.js.map": "/photo-gallery/static/js/979.289e5de5.chunk.js.map",
@@ -46,7 +46,7 @@
     "355.1fcf8846.chunk.js.map": "/photo-gallery/static/js/355.1fcf8846.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27b25043.css",
-    "static/js/main.82948825.js"
+    "static/css/main.8a8957bb.css",
+    "static/js/main.6147e61e.js"
   ]
 }
